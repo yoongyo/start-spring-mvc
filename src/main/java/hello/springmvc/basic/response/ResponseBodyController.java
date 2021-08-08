@@ -15,8 +15,8 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 @Slf4j
-@Controller
-// @RestController =  @ResponseBody + @Controller  전역적으로
+@RestController
+// @RestController =  @ResponseBody + @Controller  모든 컨트롤러에 적용
 public class ResponseBodyController {
 
     @GetMapping("/response-body-string-v1")
